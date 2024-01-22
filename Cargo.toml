@@ -1,0 +1,15 @@
+[package]
+name = "kafka"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "kafka_lib"
+path = "src/lib/lib.rs"
+
+[dependencies]
+tokio = { version = "*", features = ["full"] }
+serde_json = { version = "1.0.99" }
+clap = { version = "4.4.7", features = ["derive"] }
